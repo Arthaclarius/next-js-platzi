@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,31 +104,100 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ "@emotion/styled");
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_globalStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/globalStyles */ "./styles/globalStyles.tsx");
 var _jsxFileName = "/home/surface/projects/platzi/next-js-platzi/pages/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
+
+const Title = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.h1`
+  color: red;
+`;
+const Logo = _emotion_styled__WEBPACK_IMPORTED_MODULE_1___default.a.img`
+  max-width: 50%;
+  display: block;
+  margin: auto;
+`;
 
 const Home = () => __jsx("div", {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 4,
+    lineNumber: 16,
     columnNumber: 3
   }
-}, __jsx("h1", {
+}, _styles_globalStyles__WEBPACK_IMPORTED_MODULE_2__["globalStyles"], __jsx(Title, {
   __self: undefined,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5,
+    lineNumber: 18,
     columnNumber: 5
   }
-}, "Hello world!"));
+}, "Hello world!"), __jsx(Logo, {
+  src: "/platzi-logo.png",
+  alt: "logo",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 19,
+    columnNumber: 5
+  }
+}));
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
-/***/ 3:
+/***/ "./styles/globalStyles.tsx":
+/*!*********************************!*\
+  !*** ./styles/globalStyles.tsx ***!
+  \*********************************/
+/*! exports provided: globalStyles */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "globalStyles", function() { return globalStyles; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/home/surface/projects/platzi/next-js-platzi/styles/globalStyles.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const globalStyles = __jsx(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["Global"], {
+  styles: _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+      @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+      html {
+        min-height: 100vh;
+        font-family: "Lato";
+      }
+
+      body,
+      #__next {
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      #__next {
+        display: flex;
+      }
+    `,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 3
+  }
+});
+
+/***/ }),
+
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
@@ -137,6 +206,28 @@ const Home = () => __jsx("div", {
 
 module.exports = __webpack_require__(/*! /home/surface/projects/platzi/next-js-platzi/pages/index.tsx */"./pages/index.tsx");
 
+
+/***/ }),
+
+/***/ "@emotion/core":
+/*!********************************!*\
+  !*** external "@emotion/core" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@emotion/core");
+
+/***/ }),
+
+/***/ "@emotion/styled":
+/*!**********************************!*\
+  !*** external "@emotion/styled" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@emotion/styled");
 
 /***/ }),
 
